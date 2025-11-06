@@ -1,0 +1,325 @@
+.formInp {
+    width: 25%;
+    padding: 6px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.loginLayout {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    box-sizing: border-box;
+    width: 100%;
+    font-family: nunito, sans-serif;
+    background: white;
+}
+
+.layoutLeft {
+    width: 57%;
+    padding: 25px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        /* padding: 0; */
+    }
+}
+
+.layoutRight {
+    width: 43%;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.registerBtnTopContainer {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.registerBtnBottomContainer {
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.loginImg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.loginTopImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26.5%;
+    /* z-index: 0; */
+    @media screen and (max-width: 768px) {
+        width: 63%;
+    }
+}
+
+.loginBottomImg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20.5%;
+    @media screen and (max-width: 768px) {
+        width: 43%;
+    }
+    /* z-index: -1; */
+}
+
+.logoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    img {
+        width: 152px;
+        cursor: pointer;
+    }
+}
+
+.loginContent {
+    padding: 125px 125px 0 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        padding: 70px 15px 0 15px;
+    }
+}
+
+.welcomeText {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
+    }
+}
+
+.loginText {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginButton {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    outline: none;
+    color: #777777;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.loginButton:hover {
+    background-color: #f0f0f0;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.loginSubmitButton {
+    background: #1877f2;
+    color: white;
+}
+
+.loginSubmitButton:hover {
+    background: #165eab;
+    color: white;
+}
+
+.loginInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.logininput:focus {
+    border: 1px solid #1877f2;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.dividerLogin {
+    margin: 20px 0;
+    width: 100%;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #ccc;
+        /* width: 100%;
+        display: inline-block; */
+    }
+}
+
+.dividerRegister {
+    margin: 20px 0;
+    width: 100%;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    .orText {
+        border-radius: 10px;
+        background: #ffffff;
+        padding: 5px;
+        margin-top: -15px;
+        position: absolute;
+        left: 50%;
+    }
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    /* width: 100%;
+    display: inline-block; */
+}
+
+.orText {
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 5px;
+    margin-top: -15px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.chkBoxContainerLogin {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.chkBoxContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.loginChk {
+    width: 10%;
+}
+
+.registerChk {
+    width: 10%;
+    cursor: pointer;
+}
+
+.forgetPasswordContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    input,
+    label {
+        margin: 0 !important;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.registerBtn {
+    color: #1877f2;
+}
+
+.registerContent {
+    padding: 70px 45px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        padding: 70px 20px 10px;
+    }
+}
+
+.registerBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    .loginButton {
+        width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
+        .loginButton {
+            width: 100%;
+        }
+    }
+}
+
+.registerLable {
+    color: #777777;
+}
+
+.registerLink {
+    color: #1877f2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.registerInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.registerForm {
+    gap: 15px;
+}
+
+.errorText {
+    font-size: 14px;
+}
